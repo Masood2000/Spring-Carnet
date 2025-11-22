@@ -9,15 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        var mApplicationContext = new AnnotationConfigApplicationContext(ProjectConfiguration.class);
 
-        var commentService = mApplicationContext.getBean(CommentService.class);
-
-        Comment comment = new Comment();
-        comment.setAuthor("Masood");
-        comment.setText("This is my second Comment");
-
-        commentService.publishComment(comment);
 
 
     }
