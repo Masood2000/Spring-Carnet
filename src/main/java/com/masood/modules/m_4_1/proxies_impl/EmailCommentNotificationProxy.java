@@ -3,7 +3,10 @@ package com.masood.modules.m_4_1.proxies_impl;
 
 import com.masood.modules.m_4_1.entities.Comment;
 import com.masood.modules.m_4_1.proxies.CommentNotificationProxy;
+import org.springframework.stereotype.Component;
 
+
+@Component
 public class EmailCommentNotificationProxy implements CommentNotificationProxy {
 
     @Override
