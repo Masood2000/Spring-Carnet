@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
 
+
         var mApplicationContext = new AnnotationConfigApplicationContext(Config.class);
 
         var commentService = mApplicationContext.getBean(CommentService.class);
