@@ -1,4 +1,4 @@
-package com.masood.modules.m_4_1.entities;
+package com.masood.modules.m_4.entities;
 
 public class Comment {
 

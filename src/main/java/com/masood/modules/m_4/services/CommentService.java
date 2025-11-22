@@ -1,9 +1,9 @@
-package com.masood.modules.m_4_1.services;
+package com.masood.modules.m_4.services;
 
 
-import com.masood.modules.m_4_1.entities.Comment;
-import com.masood.modules.m_4_1.proxies.CommentNotificationProxy;
-import com.masood.modules.m_4_1.repositories.CommentRepository;
+import com.masood.modules.m_4.entities.Comment;
+import com.masood.modules.m_4.proxies.CommentNotificationProxy;
+import com.masood.modules.m_4.repositories.CommentRepository;
 import org.springframework.stereotype.Component;
 
 

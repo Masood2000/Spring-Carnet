@@ -1,10 +1,8 @@
 package com.masood;
 
-import com.masood.modules.m_4_1.configuration.Config;
-import com.masood.modules.m_4_1.entities.Comment;
-import com.masood.modules.m_4_1.repositories_impl.DbCommentRepository;
-import com.masood.modules.m_4_1.proxies_impl.EmailCommentNotificationProxy;
-import com.masood.modules.m_4_1.services.CommentService;
+import com.masood.modules.m_4.configuration.Config;
+import com.masood.modules.m_4.entities.Comment;
+import com.masood.modules.m_4.services.CommentService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
