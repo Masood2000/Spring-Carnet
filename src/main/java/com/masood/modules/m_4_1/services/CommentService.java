@@ -6,11 +6,12 @@ import com.masood.modules.m_4_1.repositories.CommentRepository;
 
 class CommentService {
 
-    private CommentRepository mCommentRepository;
-    private CommentNotificationProxy commentNotificationProxy;
+    private final CommentRepository mCommentRepository;
+    private final CommentNotificationProxy commentNotificationProxy;
 
 
-
-
-
+    CommentService(CommentRepository mCommentRepository, CommentNotificationProxy commentNotificationProxy) {
+        this.mCommentRepository = mCommentRepository;
+        this.commentNotificationProxy = commentNotificationProxy;
+    }
 }
