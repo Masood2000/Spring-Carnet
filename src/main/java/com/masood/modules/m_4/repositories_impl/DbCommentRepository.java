@@ -3,9 +3,10 @@ package com.masood.modules.m_4.repositories_impl;
 import com.masood.modules.m_4.entities.Comment;
 import com.masood.modules.m_4.repositories.CommentRepository;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 
-@Component
+@Repository
 public class DbCommentRepository implements CommentRepository {
 
     @Override
