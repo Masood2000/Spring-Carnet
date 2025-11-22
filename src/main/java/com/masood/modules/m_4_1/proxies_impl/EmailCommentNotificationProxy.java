@@ -1,6 +1,7 @@
-package com.masood.modules.m_4_1;
+package com.masood.modules.m_4_1.proxies_impl;
 
 
+import com.masood.modules.m_4_1.entities.Comment;
 import com.masood.modules.m_4_1.proxies.CommentNotificationProxy;
 
 public class EmailCommentNotificationProxy implements CommentNotificationProxy {

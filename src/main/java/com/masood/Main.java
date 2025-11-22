@@ -1,8 +1,8 @@
 package com.masood;
 
-import com.masood.modules.m_4_1.Comment;
-import com.masood.modules.m_4_1.DbCommentRepository;
-import com.masood.modules.m_4_1.EmailCommentNotificationProxy;
+import com.masood.modules.m_4_1.entities.Comment;
+import com.masood.modules.m_4_1.repositories_impl.DbCommentRepository;
+import com.masood.modules.m_4_1.proxies_impl.EmailCommentNotificationProxy;
 import com.masood.modules.m_4_1.services.CommentService;
 
 public class Main {
@@ -19,7 +19,6 @@ public class Main {
         comment.setText("This is my first Comment");
 
         commentService.publishComment(comment);
-
 
     }
 }

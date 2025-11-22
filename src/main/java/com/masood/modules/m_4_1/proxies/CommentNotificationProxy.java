@@ -1,6 +1,6 @@
 package com.masood.modules.m_4_1.proxies;
 
-import com.masood.modules.m_4_1.Comment;
+import com.masood.modules.m_4_1.entities.Comment;
 
 public interface CommentNotificationProxy {
 

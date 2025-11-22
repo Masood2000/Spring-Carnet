@@ -1,7 +1,7 @@
 package com.masood.modules.m_4_1.services;
 
 
-import com.masood.modules.m_4_1.Comment;
+import com.masood.modules.m_4_1.entities.Comment;
 import com.masood.modules.m_4_1.proxies.CommentNotificationProxy;
 import com.masood.modules.m_4_1.repositories.CommentRepository;
 

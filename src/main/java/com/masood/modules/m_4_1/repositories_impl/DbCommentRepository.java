@@ -1,5 +1,6 @@
-package com.masood.modules.m_4_1;
+package com.masood.modules.m_4_1.repositories_impl;
 
+import com.masood.modules.m_4_1.entities.Comment;
 import com.masood.modules.m_4_1.repositories.CommentRepository;
 
 public class DbCommentRepository implements CommentRepository {
