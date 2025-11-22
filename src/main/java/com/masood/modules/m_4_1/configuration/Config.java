@@ -5,6 +5,7 @@ import com.masood.modules.m_4_1.proxies.CommentNotificationProxy;
 import com.masood.modules.m_4_1.proxies_impl.EmailCommentNotificationProxy;
 import com.masood.modules.m_4_1.repositories.CommentRepository;
 import com.masood.modules.m_4_1.repositories_impl.DbCommentRepository;
+import com.masood.modules.m_4_1.services.CommentService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -21,5 +22,15 @@ public class Config {
         return new EmailCommentNotificationProxy();
     }
 
+    @Bean
+    public CommentService commentService(
+            CommentRepository commentRepository,
+            CommentNotificationProxy commentNotificationProxy
+    ) {
+        return new CommentService(
+                commentRepository,
+                commentNotificationProxy
+        );
+    }
 
 }
