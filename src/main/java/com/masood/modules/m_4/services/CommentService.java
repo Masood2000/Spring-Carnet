@@ -4,6 +4,7 @@ package com.masood.modules.m_4.services;
 import com.masood.modules.m_4.entities.Comment;
 import com.masood.modules.m_4.proxies.CommentNotificationProxy;
 import com.masood.modules.m_4.repositories.CommentRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
@@ -14,8 +15,9 @@ public class CommentService {
     private final CommentNotificationProxy mCommentNotificationProxy;
 
 
-    public CommentService(CommentRepository mCommentRepository, CommentNotificationProxy commentNotificationProxy) {
-        this.mCommentRepository = mCommentRepository;
+    @Autowired
+    public CommentService(CommentRepository commentRepository, CommentNotificationProxy commentNotificationProxy) {
+        this.mCommentRepository = commentRepository;
         this.mCommentNotificationProxy = commentNotificationProxy;
     }
 

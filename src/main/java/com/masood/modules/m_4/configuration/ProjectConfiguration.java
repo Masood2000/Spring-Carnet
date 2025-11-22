@@ -7,17 +7,29 @@ import com.masood.modules.m_4.repositories.CommentRepository;
 import com.masood.modules.m_4.repositories_impl.DbCommentRepository;
 import com.masood.modules.m_4.services.CommentService;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
-public class Config {
+@ComponentScan(basePackages = {
+        "com.masood.modules.m_4.proxies_impl",
+        "com.masood.modules.m_4.services",
+        "com.masood.modules.m_4.repositories_impl"
+})
+public class ProjectConfiguration {
 
-    @Bean
+
+
+
+/*    @Bean
+    @Primary
     public CommentRepository commentRepository() {
         return new DbCommentRepository();
     }
 
     @Bean
+    @Primary
     public CommentNotificationProxy commentNotificationProxy() {
         return new EmailCommentNotificationProxy();
     }
@@ -31,6 +43,6 @@ public class Config {
                 commentRepository,
                 commentNotificationProxy
         );
-    }
+    }*/
 
 }
