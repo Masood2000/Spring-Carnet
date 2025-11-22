@@ -1,17 +1,25 @@
 package com.masood.modules.m_4_1.services;
 
 
+import com.masood.modules.m_4_1.Comment;
 import com.masood.modules.m_4_1.proxies.CommentNotificationProxy;
 import com.masood.modules.m_4_1.repositories.CommentRepository;
 
-class CommentService {
+public class CommentService {
 
     private final CommentRepository mCommentRepository;
-    private final CommentNotificationProxy commentNotificationProxy;
+    private final CommentNotificationProxy mCommentNotificationProxy;
 
 
-    CommentService(CommentRepository mCommentRepository, CommentNotificationProxy commentNotificationProxy) {
+    public CommentService(CommentRepository mCommentRepository, CommentNotificationProxy commentNotificationProxy) {
         this.mCommentRepository = mCommentRepository;
-        this.commentNotificationProxy = commentNotificationProxy;
+        this.mCommentNotificationProxy = commentNotificationProxy;
     }
+
+
+    public void publishComment(Comment comment) {
+        this.mCommentRepository.storeComment(comment);
+        this.mCommentNotificationProxy.sendComment(comment);
+    }
+
 }

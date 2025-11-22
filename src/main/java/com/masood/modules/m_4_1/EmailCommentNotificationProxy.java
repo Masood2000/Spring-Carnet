@@ -7,7 +7,7 @@ public class EmailCommentNotificationProxy implements CommentNotificationProxy {
 
     @Override
     public void sendComment(Comment comment) {
-        System.out.println("Sending Comment by Email -> " + comment);
+        System.out.println("Sending Comment by Email -> " + comment.getText());
     }
 
 }

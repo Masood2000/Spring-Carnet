@@ -6,7 +6,7 @@ public class DbCommentRepository implements CommentRepository {
 
     @Override
     public void storeComment(Comment comment) {
-        System.out.println("Storing Comment in the DB ->"+comment);
+        System.out.println("Storing Comment in the DB ->"+comment.getText());
     }
 
 }
