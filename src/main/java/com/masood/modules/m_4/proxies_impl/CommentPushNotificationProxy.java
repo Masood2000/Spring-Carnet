@@ -12,6 +12,8 @@ public class CommentPushNotificationProxy implements CommentNotificationProxy {
 
     @Override
     public void sendComment(Comment comment) {
+
         System.out.println("Sending Comment via PUSH Notification -> "+comment.getText());
+
     }
 }
