@@ -2,11 +2,8 @@ package com.masood.modules.m_4.entities;
 
 public class Comment {
 
-
     private String author;
     private String text;
-
-
 
     //Getters and Setters
     public String getAuthor() {
