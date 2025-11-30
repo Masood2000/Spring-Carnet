@@ -3,12 +3,21 @@ package com.masood.modules.m_4.configuration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+
+
+
 @Configuration
 @ComponentScan(basePackages = {"com.masood.modules.m_4.proxies_impl",
         "com.masood.modules.m_4.services",
         "com.masood.modules.m_4.repositories_impl"
 })
 public class ProjectConfiguration {
+
+
+/***
+ * Below is the way to add beans using the
+ * methods way and we can also do this by using stereotype annotations.
+ */
 
 
 
