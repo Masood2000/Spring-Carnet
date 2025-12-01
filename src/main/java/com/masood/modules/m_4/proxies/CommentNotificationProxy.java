@@ -3,9 +3,6 @@ package com.masood.modules.m_4.proxies;
 import com.masood.modules.m_4.entities.Comment;
 
 
-
-
-
 /***
  * No need to annotate interfaces in spring only
  * the classes which implements them must be annotated
