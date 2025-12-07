@@ -1,14 +1,10 @@
 package com.masood.modules.m_4.services;
-
-
 import com.masood.modules.m_4.entities.Comment;
 import com.masood.modules.m_4.proxies.CommentNotificationProxy;
 import com.masood.modules.m_4.repositories.CommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
-
-
 
 
 
