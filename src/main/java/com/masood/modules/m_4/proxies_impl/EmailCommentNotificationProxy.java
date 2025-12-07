@@ -19,6 +19,8 @@ public class EmailCommentNotificationProxy implements CommentNotificationProxy {
         System.out.println("Sending Comment by Email -> " + comment.getText());
     }
 
+
+
 }
 
 
