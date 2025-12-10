@@ -5,7 +5,6 @@ import com.masood.modules.m_4.proxies.CommentNotificationProxy;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-
 @Component
 @Qualifier("push_notification_proxy")
 public class CommentPushNotificationProxy implements CommentNotificationProxy {
@@ -17,3 +16,4 @@ public class CommentPushNotificationProxy implements CommentNotificationProxy {
 
     }
 }
+
