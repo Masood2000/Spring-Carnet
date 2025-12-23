@@ -20,7 +20,6 @@ public class ProjectConfiguration {
  */
 
 
-
 /*    @Bean
     public CommentRepository commentRepository() {
         return new DbCommentRepository();
