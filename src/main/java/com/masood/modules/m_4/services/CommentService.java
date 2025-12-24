@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
  */
 
 @Service
+@Qualifier("commentService")
 public class CommentService {
 
     private final CommentRepository mCommentRepository;
