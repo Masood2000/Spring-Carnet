@@ -2,6 +2,7 @@ package com.masood.modules.m_5.services;
 import com.masood.modules.m_5.entities.Comment;
 import com.masood.modules.m_5.proxies.CommentNotificationProxy;
 import com.masood.modules.m_5.repositories.CommentRepository;
+import com.masood.modules.m_5.utils.CommentProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -32,6 +33,19 @@ public class CommentService {
 
     public CommentRepository getCommentRepository() {
         return this.mCommentRepository;
+    }
+
+
+    public void sendComment(Comment _comment) {
+
+        CommentProcessor commentProcessor = new CommentProcessor();
+
+        commentProcessor.setComment(_comment);
+        commentProcessor.processComment();
+        commentProcessor.validateComment();
+
+        _comment = commentProcessor.getComment();
+
     }
 
 }

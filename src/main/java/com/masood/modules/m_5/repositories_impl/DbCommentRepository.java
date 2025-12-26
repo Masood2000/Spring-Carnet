@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-@Scope(BeanDefinition.SCOPE_SINGLETON)
+@Scope(BeanDefinition.SCOPE_PROTOTYPE)
 public class DbCommentRepository implements CommentRepository {
 
     @Override
