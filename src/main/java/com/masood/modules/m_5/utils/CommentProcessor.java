@@ -1,7 +1,13 @@
 package com.masood.modules.m_5.utils;
 
 import com.masood.modules.m_5.entities.Comment;
+import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
+
+@Component
+@Scope(BeanDefinition.SCOPE_PROTOTYPE)
 public class CommentProcessor {
 
     private Comment comment;
