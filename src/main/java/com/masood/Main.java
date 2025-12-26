@@ -13,12 +13,12 @@ public class Main {
         var c  = new AnnotationConfigApplicationContext(ProjectConfiguration.class);
 
 
-        System.out.println("this line is executed");
+        var b1 = c.getBean("commentService", CommentService.class).getCommentRepository();
+        var b2 = c.getBean("userService", UserService.class).getCommentRepository();
 
-        Thread.sleep(2000L);
+        var ans = b1==b2;
 
-        var k = c.getBean("commentService", CommentService.class);
-
+        System.out.println(ans);
 
     }
 }
