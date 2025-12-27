@@ -22,8 +22,6 @@ public class Main {
         cm.setText("Crime et Chatiment");
         b1.sendComment(cm);
 
-
-
     }
 }
 
