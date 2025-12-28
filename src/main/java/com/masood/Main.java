@@ -2,6 +2,7 @@ package com.masood;
 
 
 import com.masood.modules.m_6.configuration.ProjectConfiguration;
+import com.masood.modules.m_6.entities.Comment;
 import com.masood.modules.m_6.services.CommentService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -10,11 +11,17 @@ public class Main {
 
 
         var c  = new AnnotationConfigApplicationContext(ProjectConfiguration.class);
-        
-        var b1 = c.getBean("commentService", CommentService.class);
+
+        var service = c.getBean(CommentService.class);
 
 
-        System.out.println(b1.getClass());
+        Comment comment = new Comment();
+        comment.setText("Demo comment");
+        comment.setAuthor("Natasha");
+
+        service.publishComment(comment);
+
+        System.out.println("done");
 
     }
 }

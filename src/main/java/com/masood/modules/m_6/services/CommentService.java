@@ -11,6 +11,8 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
+import java.util.logging.Logger;
+
 
 /***
  * It's a services class and we don't
@@ -50,6 +52,14 @@ public class CommentService {
         _comment = commentProcessor.getComment();
 
         commentProcessor.sendComment();
+
+    }
+
+    private Logger logger = Logger.getLogger(CommentService.class.getName());
+
+    public void publishComment(Comment comment){
+
+        logger.info("Publishing comment:" + comment.getText());
 
     }
 
