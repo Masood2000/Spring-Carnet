@@ -5,10 +5,11 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-@ComponentScan(basePackages = {"com.masood.modules.m_5.proxies_impl",
-        "com.masood.modules.m_5.services",
-        "com.masood.modules.m_5.repositories_impl",
-        "com.masood.modules.m_5.utils"
+@ComponentScan(basePackages = {
+        "com.masood.modules.m_6.proxies_impl",
+        "com.masood.modules.m_6.services",
+        "com.masood.modules.m_6.repositories_impl",
+        "com.masood.modules.m_6.utils"
 })
 public class ProjectConfiguration {
 

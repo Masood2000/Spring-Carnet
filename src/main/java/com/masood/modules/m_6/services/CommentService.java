@@ -1,8 +1,8 @@
 package com.masood.modules.m_6.services;
-import com.masood.modules.m_5.entities.Comment;
-import com.masood.modules.m_5.proxies.CommentNotificationProxy;
-import com.masood.modules.m_5.repositories.CommentRepository;
-import com.masood.modules.m_5.utils.CommentProcessor;
+import com.masood.modules.m_6.entities.Comment;
+import com.masood.modules.m_6.proxies.CommentNotificationProxy;
+import com.masood.modules.m_6.repositories.CommentRepository;
+import com.masood.modules.m_6.utils.CommentProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.BeanDefinition;

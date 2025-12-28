@@ -1,9 +1,8 @@
 package com.masood;
 
-import com.masood.modules.m_5.configuration.ProjectConfiguration;
-import com.masood.modules.m_5.entities.Comment;
-import com.masood.modules.m_5.services.CommentService;
-import com.masood.modules.m_5.services.UserService;
+
+import com.masood.modules.m_6.configuration.ProjectConfiguration;
+import com.masood.modules.m_6.services.CommentService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
@@ -13,12 +12,9 @@ public class Main {
         var c  = new AnnotationConfigApplicationContext(ProjectConfiguration.class);
         
         var b1 = c.getBean("commentService", CommentService.class);
-        var b2 = c.getBean("userService", UserService.class);
 
-        Comment cm = new Comment();
-        cm.setAuthor("Masood");
-        cm.setText("Crime et Chatiment");
-        b1.sendComment(cm);
+
+        System.out.println(b1.getClass());
 
     }
 }

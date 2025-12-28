@@ -1,7 +1,7 @@
 package com.masood.modules.m_6.repositories_impl;
 
-import com.masood.modules.m_5.entities.Comment;
-import com.masood.modules.m_5.repositories.CommentRepository;
+import com.masood.modules.m_6.entities.Comment;
+import com.masood.modules.m_6.repositories.CommentRepository;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
