@@ -11,8 +11,7 @@ public class Main {
 
 
         var c  = new AnnotationConfigApplicationContext(ProjectConfiguration.class);
-
-
+        
         var b1 = c.getBean("commentService", CommentService.class);
         var b2 = c.getBean("userService", UserService.class);
 
@@ -23,6 +22,8 @@ public class Main {
 
     }
 }
+
+
 
 
 
