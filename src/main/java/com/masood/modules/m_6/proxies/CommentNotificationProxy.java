@@ -1,4 +1,4 @@
-package com.masood.modules.m_5.repositories;
+package com.masood.modules.m_6.proxies;
 
 import com.masood.modules.m_5.entities.Comment;
 
@@ -10,10 +10,9 @@ import com.masood.modules.m_5.entities.Comment;
  * because there is no need to annotate the interfaces
  * because there object is not created.
  */
-public interface CommentRepository {
+public interface CommentNotificationProxy {
 
-    public void  storeComment(Comment comment);
+    public void sendComment(Comment comment);
 
 }
-
 

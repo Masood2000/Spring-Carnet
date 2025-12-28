@@ -1,6 +1,6 @@
-package com.masood.modules.m_5.repositories;
+package com.masood.modules.m_6.repositories;
 
-import com.masood.modules.m_5.entities.Comment;
+import com.masood.modules.m_6.entities.Comment;
 
 
 /***
