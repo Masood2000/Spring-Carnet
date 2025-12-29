@@ -19,12 +19,10 @@ public class Main {
         comment.setText("Demo comment");
         comment.setAuthor("Natasha");
 
-        service.publishComment(comment);
+        String ans= service.publishComment(comment);
 
+        System.out.println(ans);
 
-        System.out.println("done");
-
-        service.alldone();
     }
 }
 

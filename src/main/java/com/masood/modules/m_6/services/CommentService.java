@@ -64,11 +64,6 @@ public class CommentService {
         return "SUCCESS";
     }
 
-
-    public void alldone(){
-        System.out.println("this one called");
-    }
-
 }
 
 

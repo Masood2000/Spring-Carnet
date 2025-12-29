@@ -23,16 +23,22 @@ public class LoggingAspect {
         String methodName = proceedingJoinPoint.getSignature().getName();
         Object[] args = proceedingJoinPoint.getArgs();
 
-        //Comment cm = (Comment) args[0];
+        Comment cm = new Comment();
+        cm.setText("brothers karamazov");
+        cm.setAuthor("dovotseky");
+
+        Object[] arsNew = {cm};
 
 
         logger.info("Method " + methodName + " with parameters " + Arrays.asList(args) + " will execute");
 
-        Object returnedByMethod = proceedingJoinPoint.proceed();
+        Object returnedByMethod = proceedingJoinPoint.proceed(arsNew);
+
+        String k = (returnedByMethod.toString())+"Failed also";
 
         logger.info("Method executed and returned " + returnedByMethod);
 
-        return returnedByMethod;
+        return k;
 
     }
 
