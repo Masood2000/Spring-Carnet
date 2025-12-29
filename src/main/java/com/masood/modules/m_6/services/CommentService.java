@@ -59,8 +59,13 @@ public class CommentService {
 
     public void publishComment(Comment comment){
 
-        logger.info("Publishing comment:" + comment.getText());
+        //logger.info("Publishing comment:" + comment.getText());
 
+    }
+
+
+    public void alldone(){
+        System.out.println("this one called");
     }
 
 }

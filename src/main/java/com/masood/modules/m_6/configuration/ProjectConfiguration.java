@@ -2,14 +2,17 @@ package com.masood.modules.m_6.configuration;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 
 @Configuration
+@EnableAspectJAutoProxy
 @ComponentScan(basePackages = {
         "com.masood.modules.m_6.proxies_impl",
         "com.masood.modules.m_6.services",
         "com.masood.modules.m_6.repositories_impl",
-        "com.masood.modules.m_6.utils"
+        "com.masood.modules.m_6.utils",
+        "com.masood.modules.m_6.aspects"
 })
 public class ProjectConfiguration {
 

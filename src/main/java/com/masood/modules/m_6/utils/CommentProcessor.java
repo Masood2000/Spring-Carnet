@@ -38,5 +38,8 @@ public class CommentProcessor {
         commentRepository.storeComment(this.mComment);
         System.out.println(this.mComment.toString()+"-> sent");
     }
+
+
+
 }
 

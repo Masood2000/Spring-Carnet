@@ -21,8 +21,10 @@ public class Main {
 
         service.publishComment(comment);
 
+
         System.out.println("done");
 
+        service.alldone();
     }
 }
 
