@@ -34,8 +34,6 @@ public class LoggingAspect {
 
         return returnedByMethod;
 
-
-
     }
 
 }
