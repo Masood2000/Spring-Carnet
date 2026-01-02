@@ -17,6 +17,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 public class ProjectConfiguration {
 
 
+
 /***
  * Below is the way to add beans using the
  * methods way and we can also do this by using stereotype annotations.
