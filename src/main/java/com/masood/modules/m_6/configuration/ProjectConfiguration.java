@@ -1,5 +1,8 @@
 package com.masood.modules.m_6.configuration;
 
+import com.masood.modules.m_6.aspects.LoggingAspect;
+import com.masood.modules.m_6.aspects.SecurityAspect;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
@@ -43,7 +46,20 @@ public class ProjectConfiguration {
                 commentRepository,
                 commentNotificationProxy
         );
-    }*/
+    }
+
+
+    @Bean
+    public LoggingAspect getLoggingAspect() {
+        return new LoggingAspect();
+    }
+
+    @Bean
+    public SecurityAspect getSecurityAscpect() {
+        return new SecurityAspect();
+    }
+*/
+
 
 }
 
