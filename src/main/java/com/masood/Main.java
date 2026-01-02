@@ -19,9 +19,14 @@ public class Main {
         comment.setText("Demo comment");
         comment.setAuthor("Natasha");
 
-        String ans= service.publishComment(comment);
+        String ans1= service.publishComment(comment);
+        String ans2= service.editComment();
+        String ans3= service.deleteComment();
 
-        System.out.println(ans);
+
+        System.out.println(ans1);
+        System.out.println(ans2);
+        System.out.println(ans3);
 
     }
 }

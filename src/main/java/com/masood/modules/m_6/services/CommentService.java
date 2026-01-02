@@ -1,4 +1,5 @@
 package com.masood.modules.m_6.services;
+import com.masood.modules.m_6.annotations.ToLog;
 import com.masood.modules.m_6.entities.Comment;
 import com.masood.modules.m_6.proxies.CommentNotificationProxy;
 import com.masood.modules.m_6.repositories.CommentRepository;
@@ -41,6 +42,8 @@ public class CommentService {
     }
 
 
+
+
     public void sendComment(Comment _comment) {
 
         CommentProcessor commentProcessor = context.getBean(CommentProcessor.class);
@@ -57,12 +60,27 @@ public class CommentService {
 
     private Logger logger = Logger.getLogger(CommentService.class.getName());
 
+    //@ToLog
     public String publishComment(Comment comment){
 
-        logger.info("Publishing comment:" + comment.getText());
+        //logger.info("Publishing comment:" + comment.getText());
 
-        return "SUCCESS";
+        return "PUBLISH : SUCCESS";
     }
+
+    @ToLog
+    public String deleteComment() {
+
+        return "DELETED : SUCCESS";
+    }
+
+    //@ToLog
+    public String editComment() {
+
+        return "EDITED : SUCCESS";
+    }
+
+
 
 }
 
