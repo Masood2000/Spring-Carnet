@@ -24,6 +24,8 @@ public class Main {
         String ans3= service.deleteComment();
 
 
+
+
         System.out.println(ans1);
         System.out.println(ans2);
         System.out.println(ans3);
