@@ -1,6 +1,5 @@
 package com.masood;
 
-
 import com.masood.modules.m_6.configuration.ProjectConfiguration;
 import com.masood.modules.m_6.entities.Comment;
 import com.masood.modules.m_6.services.CommentService;
